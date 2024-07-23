@@ -7,9 +7,7 @@ class SplashPage extends StatelessWidget {
 
   Future delay(context) async {
     await Future.delayed(
-      const Duration(
-        microseconds: 3000,
-      ),
+      const Duration(seconds: 3),
       () {
         Navigator.push(
           context,

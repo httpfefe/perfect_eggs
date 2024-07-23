@@ -17,31 +17,32 @@ class HomePage extends StatelessWidget {
     final bloc = Provider.of<AppBloc>(context);
     return Scaffold(
       body: Container(
+          alignment: Alignment.center,
           child: ListView(
-        children: const [
-          SizedBox(
-            height: 50,
-          ),
-          Text(
-            "Perfect Eggs",
-            style: TextStyle(
-              fontSize: 34,
-              fontWeight: FontWeight.bold,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          Eggs(),
-          Padding(
-            padding: EdgeInsets.all(50),
-            child: TypeButtons(),
-          ),
-          ProgressBar(),
-          Padding(
-            padding: EdgeInsets.all(20),
-            child: ActionButtons(),
-          )
-        ],
-      )),
+            children: const [
+              SizedBox(
+                height: 50,
+              ),
+              Text(
+                "Perfect Eggs",
+                style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              Eggs(),
+              Padding(
+                padding: EdgeInsets.all(50),
+                child: TypeButtons(),
+              ),
+              ProgressBar(),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: ActionButtons(),
+              )
+            ],
+          )),
     );
   }
 }
